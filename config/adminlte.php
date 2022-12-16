@@ -312,28 +312,33 @@ return [
             'can'  => 'manage-blog',
         ],
         [
+            'text' => 'Participantes',
+            'url'  => '/participants',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
             'text'        => 'Aulas',
             'url'         => '/classrooms',
-            'icon' => 'fas fa-fw fa-user',
+            'icon_color' => 'green',
         ],
         [
             'text' => 'Categorias',
             'url'  => '/categories',
-            'icon' => 'far fa-fw fa-file',
+            'icon_color' => 'cyan',
 
         ],
         [
             'text' => 'Equipos',
             'url'  => 'teams',
-            'icon' => 'fas fa-fw fa-lock',
+            'icon_color' => 'yellow',
         ],
         [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
+            'text' => 'Juegos',
+            'url'  => 'games',
+            'icon_color' => 'red',
         ],
+        
+       
         ['header' => 'account_settings'],
         [
             'text' => 'profile',
@@ -383,22 +388,7 @@ return [
                 ],
             ],
         ],
-        ['header' => 'labels'],
-        [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
-        ],
+        
     ],
 
     /*
