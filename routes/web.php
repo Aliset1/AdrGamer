@@ -28,6 +28,7 @@ Route::middleware([
 });
 
 //Route Hooks - Do not delete//
+	Route::view('classrooms', 'livewire.classrooms.index')->middleware('auth');
 	Route::view('categories', 'livewire.categories.index')->middleware('auth');
 	Route::view('teams', 'livewire.teams.index')->middleware('auth');
 Auth::routes();

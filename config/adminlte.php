@@ -312,6 +312,22 @@ return [
             'can'  => 'manage-blog',
         ],
         [
+            'text'        => 'Aulas',
+            'url'         => '/classrooms',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'text' => 'Categorias',
+            'url'  => '/categories',
+            'icon' => 'far fa-fw fa-file',
+
+        ],
+        [
+            'text' => 'Equipos',
+            'url'  => 'teams',
+            'icon' => 'fas fa-fw fa-lock',
+        ],
+        [
             'text'        => 'pages',
             'url'         => 'admin/pages',
             'icon'        => 'far fa-fw fa-file',
