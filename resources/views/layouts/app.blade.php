@@ -37,6 +37,9 @@
                     <ul class="navbar-nav mr-auto">
 						<!--Nav Bar Hooks - Do not delete!!-->
 						<li class="nav-item">
+                            <a href="{{ url('/categories') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Categories</a> 
+                        </li>
+						<li class="nav-item">
                             <a href="{{ url('/teams') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Teams</a> 
                         </li>
                     </ul>

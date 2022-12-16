@@ -28,4 +28,12 @@ Route::middleware([
 });
 
 //Route Hooks - Do not delete//
+	Route::view('categories', 'livewire.categories.index')->middleware('auth');
 	Route::view('teams', 'livewire.teams.index')->middleware('auth');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
