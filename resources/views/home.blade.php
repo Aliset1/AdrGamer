@@ -40,7 +40,7 @@ $inscriptionsgrs = \DB::table('inscriptionsgrs')
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <div class="row gap-4">
             <div class="col-3">
-                <div class="card bg-dark">
+                <div class="card bg-info">
                     <div class="card-header">
                         <h3 class="card-title">Juegos</h3>
                     </div>
