@@ -23,4 +23,4 @@ Route::post('/api/teams', [App\Http\Controllers\TeamController::class, 'store'])
 Route::get('/api/teams/{id}', [App\Http\Controllers\TeamController::class, 'show']);
 Route::put('/api/teams/{id}', [App\Http\Controllers\TeamController::class, 'update']);
 Route::delete('/api/teams/{id}', [App\Http\Controllers\TeamController::class, 'delete']);
-
+Route::get('/api/juegos', [App\Http\Controllers\JuegosController::class, 'delete']);
