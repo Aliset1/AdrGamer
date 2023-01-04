@@ -24,27 +24,27 @@
                         <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-light opcionesNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 opcionesNav">
                             <li class="nav-item">
-                            <a class="nav-link" href="/calendario">Calendario</a>
+                            <a class="nav-link primary  text-white" href="/calendario">Calendario</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="/posiciones">Posiciones</a>
+                            <a class="nav-link primary text-white" href="/posiciones">Posiciones</a>
+                            </li>
+                            <li class="nav-item " >
+                            <a class="nav-link text-white" href="/juegos">Juegos</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="/juegos">Juegos</a>
+                            <a class="nav-link text-white " href="/normativas">Normativas</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="/normativas">Normativas</a>
+                            <a class="nav-link text-white" href="/noticias">Noticias</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="/noticias">Noticias</a>
+                            <a class="nav-link text-white" href="/contactos">Contactos</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="/contactos">Contactos</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="/patrocinadores">Patrocinadores</a>
+                            <a class="nav-link text-white" href="/patrocinadores">Patrocinadores</a>
                             </li>
                         </ul>
                         <form class="d-flex" role="login">
