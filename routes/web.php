@@ -28,6 +28,8 @@ Route::middleware([
 });
 
 //Route Hooks - Do not delete//
+	Route::view('inscriptionsins', 'livewire.inscriptionsins.index')->middleware('auth');
+	Route::view('inscriptionsgrs', 'livewire.inscriptionsgrs.index')->middleware('auth');
 	Route::view('games', 'livewire.games.index')->middleware('auth');
 	Route::view('participants', 'livewire.participants.index')->middleware('auth');
 	Route::view('classrooms', 'livewire.classrooms.index')->middleware('auth');

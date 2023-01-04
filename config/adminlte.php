@@ -153,7 +153,7 @@ return [
     'layout_fixed_sidebar' => null,
     'layout_fixed_navbar' => null,
     'layout_fixed_footer' => null,
-    'layout_dark_mode' => null,
+    'layout_dark_mode' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -319,7 +319,7 @@ return [
         [
             'text'        => 'Aulas',
             'url'         => '/classrooms',
-            'icon_color' => 'green',
+            'icon' => 'fas fa-fw fa-arrow',
         ],
         [
             'text' => 'Categorias',
@@ -337,8 +337,8 @@ return [
             'url'  => 'games',
             'icon_color' => 'red',
         ],
-        
-       
+
+
         ['header' => 'account_settings'],
         [
             'text' => 'profile',
@@ -388,7 +388,7 @@ return [
                 ],
             ],
         ],
-        
+
     ],
 
     /*

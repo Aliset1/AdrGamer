@@ -13,6 +13,7 @@ class TeamController extends Controller
 {
     public function __construct()
     {
+        
     }
     public function list()
     {
@@ -44,14 +45,42 @@ class TeamController extends Controller
     public function update(Request $request, $id)
     {
         $team = Team::find($id);
+        if(!$team){
+            return response()->json([
+                'success' => false,
+                'message' => 'Team not found'
+            ], 404);
+        }
+
         $team->update($request->all());
-        return $team;
+        return response()->json([
+            'success' => true,
+            'message' => 'Team updated successfully',
+            'data' => $team
+        ], 200);
     }
 
     public function delete(Request $request, $id)
     {
         $team = Team::find($id);
-        $team->delete();
-        return 204;
+        if(!$team){
+            return response()->json([
+                'success' => false,
+                'message' => 'Team not found'
+            ], 404);
+        }
+        $response = $team->delete();
+
+        if($response==1){
+            return response()->json([
+                'success' => true,
+                'message' => 'Team deleated successfully',
+            ], 200);
+        }else{
+            return response()->json([
+                'success' => false,
+                'message' => 'Team not Deleated'
+            ], 400);
+        }
     }
 }
