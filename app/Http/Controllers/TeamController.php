@@ -13,7 +13,7 @@ class TeamController extends Controller
 {
     public function __construct()
     {
-        
+
     }
     public function list()
     {
@@ -21,7 +21,6 @@ class TeamController extends Controller
     }
     public function store(Request $request)
     {
-
         $response = Team::create($request->all());
         if($response){
             return response()->json([
