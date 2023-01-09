@@ -25,8 +25,11 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 opcionesNav">
+                            <form class="" role="calendar">
+                                <a class="btn text-white" href="/calendar">Calendario</a>
+                            </form>
                             <li class="nav-item">
-                            <a class="nav-link primary  text-white" href="/calendario">Calendario</a>
+                             <a class="nav-link primary  text-white"  href="/calendar">Calendario</a>
                             </li>
                             <li class="nav-item">
                             <a class="nav-link primary text-white" href="/posiciones">Posiciones</a>

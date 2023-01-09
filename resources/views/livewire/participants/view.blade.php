@@ -21,12 +21,23 @@
 						<div class="btn btn-sm btn-info" data-toggle="modal" data-target="#createDataModal">
 						<i class="fa fa-plus"></i>  Crear Participantes
 						</div>
+						
+						<div class="btn btn-sm btn-info" data-toggle="modal" data-target="#createDownloadModal">
+						<i class="fa fa-plus"></i>  Descargar PDF
+						</div>
+						<div>
+						<a class="btn btn-sm "  href="/generar_pdf" target="_blank">PDF</a>
+
+						</div>
+
+					
 					</div>
 				</div>
 				
 				<div class="card-body">
 						@include('livewire.participants.create')
 						@include('livewire.participants.update')
+						
 				<div class="table-responsive">
 					<table class="table table-bordered table-sm">
 						<thead class="thead">

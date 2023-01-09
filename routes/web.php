@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/calendar', function () {
+    return view('calendar');
+});
 
 Route::middleware([
     'auth:sanctum',
@@ -35,9 +38,11 @@ Route::middleware([
 	Route::view('classrooms', 'livewire.classrooms.index')->middleware('auth');
 	Route::view('categories', 'livewire.categories.index')->middleware('auth');
 	Route::view('teams', 'livewire.teams.index')->middleware('auth');
+    Route::get('download-pdf','App\Http\Livewire\Participants@generar_pdf')->name('descargar_pdf');
+    Route::get('generar_pdf', [App\Http\Livewire\Participants::class, 'generatePdf'])->name('generar_pdf');
+
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 

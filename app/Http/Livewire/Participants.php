@@ -5,6 +5,8 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Participant;
+use   PDF;
+use Illuminate\Support\Facades\App;
 
 class Participants extends Component
 {
@@ -119,5 +121,19 @@ class Participants extends Component
             $record = Participant::where('id', $id);
             $record->delete();
         }
+    }
+    public function generatePdf(){
+        $participants = Participant::all();
+        $pdf = PDF::loadView('pdf.participants',[
+            'participants'=>$participants
+        ]);
+        return $pdf->stream();
+        //return $pdf->download('participants.pdf');
+    }
+
+    public function generatePdfs(){
+        $pdf = App::make('dompdf.wrapper');
+        $pdf->loadHTML('<h1>Test</h1>');
+        return $pdf->download();
     }
 }
