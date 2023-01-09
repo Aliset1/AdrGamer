@@ -18,6 +18,11 @@
 						<div>
 							<input wire:model='keyWord' type="text" class="form-control" name="search" id="search" placeholder="Buscar Aulas">
 						</div>
+						<div>
+						<a class="btn btn-sm btn-info"  href="/classroom_pdf" target="_blank">Descargar PDF</a>
+
+						</div>
+
 						<div class="btn btn-sm btn-info" data-toggle="modal" data-target="#createDataModal">
 						<i class="fa fa-plus"></i>  Crear Aulas
 						</div>

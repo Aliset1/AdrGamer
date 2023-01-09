@@ -41,6 +41,7 @@ Route::middleware([
     Route::get('download-pdf','App\Http\Livewire\Participants@generar_pdf')->name('descargar_pdf');
     Route::get('generar_pdf', [App\Http\Livewire\Participants::class, 'generatePdf'])->name('generar_pdf');
     Route::get('categoria_pdf', [App\Http\Livewire\Categories::class, 'generatePdf'])->name('categoria_pdf');
+    Route::get('classroom_pdf',[App\Http\Livewire\Classrooms::class, 'generatePdf'])->name('classroom_pdf');
 
 Auth::routes();
 

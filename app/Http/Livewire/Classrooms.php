@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Classroom;
+use PDF;
 
 class Classrooms extends Component
 {
@@ -91,5 +92,14 @@ class Classrooms extends Component
             $record = Classroom::where('id', $id);
             $record->delete();
         }
+    }
+
+    public function generatePdf(){
+        $classrooms = Classroom::all();
+        $pdf = PDF::loadView('pdf.classrooms',[
+            'classrooms'=>$classrooms
+        ]);
+        return $pdf->stream();
+        //return $pdf->download('participants.pdf');
     }
 }
