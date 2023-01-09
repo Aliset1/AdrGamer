@@ -18,9 +18,14 @@
 						<div>
 							<input wire:model='keyWord' type="text" class="form-control" name="search" id="search" placeholder="Buscar Categoria">
 						</div>
+						<div>
+						<a class="btn btn-sm btn-info"  href="/categoria_pdf" target="_blank">Descargar PDF</a>
+
+						</div>
 						<div class="btn btn-sm btn-info" data-toggle="modal" data-target="#createDataModal">
 						<i class="fa fa-plus"></i> Crear Categoria
 						</div>
+
 					</div>
 				</div>
 				

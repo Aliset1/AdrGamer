@@ -23,17 +23,20 @@
 						<div class="btn btn-sm btn-info" data-toggle="modal" data-target="#createDataModal">
 						<i class="fa fa-plus"></i>  Crear Grupos
 						</div>
+                        <div>
+                            <a class="btn btn-sm "  href="/generarTeam_pdf" target="_blank">PDF</a>
+                        </div>
 					</div>
 				</div>
-				
+
 				<div class="card-body">
 						@include('livewire.teams.create')
 						@include('livewire.teams.update')
 				<div class="table-responsive">
 					<table class="table table-bordered table-sm">
 						<thead class="thead">
-							<tr> 
-								<td>#</td> 
+							<tr>
+								<td>#</td>
 								<th>Nombre</th>
 								<td>ACCIONES</td>
 							</tr>
@@ -41,7 +44,7 @@
 						<tbody>
 							@foreach($teams as $row)
 							<tr>
-								<td>{{ $loop->iteration }}</td> 
+								<td>{{ $loop->iteration }}</td>
 								<td>{{ $row->nombre }}</td>
 								<td width="90">
 								<div class="btn-group">
@@ -49,14 +52,14 @@
 									Acciones
 									</button>
 									<div class="dropdown-menu dropdown-menu-right">
-									<a data-toggle="modal" data-target="#updateModal" class="dropdown-item" wire:click="edit({{$row->id}})"><i class="fa fa-edit"></i> Editar </a>							 
-									<a class="dropdown-item" onclick="confirm('Confirm Delete Team id {{$row->id}}? \nDeleted Teams cannot be recovered!')||event.stopImmediatePropagation()" wire:click="destroy({{$row->id}})"><i class="fa fa-trash"></i> Eliminar </a>   
+									<a data-toggle="modal" data-target="#updateModal" class="dropdown-item" wire:click="edit({{$row->id}})"><i class="fa fa-edit"></i> Editar </a>
+									<a class="dropdown-item" onclick="confirm('Confirm Delete Team id {{$row->id}}? \nDeleted Teams cannot be recovered!')||event.stopImmediatePropagation()" wire:click="destroy({{$row->id}})"><i class="fa fa-trash"></i> Eliminar </a>
 									</div>
 								</div>
 								</td>
 							@endforeach
 						</tbody>
-					</table>						
+					</table>
 					{{ $teams->links() }}
 					</div>
 				</div>
