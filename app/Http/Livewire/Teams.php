@@ -5,6 +5,8 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Team;
+use   PDF;
+use Illuminate\Support\Facades\App;
 
 class Teams extends Component
 {
@@ -23,15 +25,15 @@ class Teams extends Component
 						->paginate(10),
         ]);
     }
-	
+
     public function cancel()
     {
         $this->resetInput();
         $this->updateMode = false;
     }
-	
+
     private function resetInput()
-    {		
+    {
 		$this->nombre = null;
     }
 
@@ -41,10 +43,10 @@ class Teams extends Component
 		'nombre' => 'required',
         ]);
 
-        Team::create([ 
+        Team::create([
 			'nombre' => $this-> nombre
         ]);
-        
+
         $this->resetInput();
 		$this->emit('closeModal');
 		session()->flash('message', 'Team Successfully created.');
@@ -54,9 +56,9 @@ class Teams extends Component
     {
         $record = Team::findOrFail($id);
 
-        $this->selected_id = $id; 
+        $this->selected_id = $id;
 		$this->nombre = $record-> nombre;
-		
+
         $this->updateMode = true;
     }
 
@@ -68,7 +70,7 @@ class Teams extends Component
 
         if ($this->selected_id) {
 			$record = Team::find($this->selected_id);
-            $record->update([ 
+            $record->update([
 			'nombre' => $this-> nombre
             ]);
 
@@ -84,5 +86,19 @@ class Teams extends Component
             $record = Team::where('id', $id);
             $record->delete();
         }
+    }
+    public function generatePdf(){
+        $teams = Team::all();
+        $pdf = PDF::loadView('pdf.teams',[
+            'teams'=>$teams
+        ]);
+        return $pdf->stream();
+        //return $pdf->download('teams.pdf');
+    }
+
+    public function generatePdfs(){
+        $pdf = App::make('dompdf.wrapper');
+        $pdf->loadHTML('<h1>Test</h1>');
+        return $pdf->download();
     }
 }
