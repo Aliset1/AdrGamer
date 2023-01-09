@@ -319,7 +319,7 @@ return [
         [
             'text'        => 'Aulas',
             'url'         => '/classrooms',
-            'icon' => 'fas fa-fw fa-arrow',
+            'icon_color' => 'yellow',
         ],
         [
             'text' => 'Categorias',
@@ -335,6 +335,16 @@ return [
         [
             'text' => 'Juegos',
             'url'  => 'games',
+            'icon_color' => 'red',
+        ],
+        [
+            'text' => 'Inscripciones Grupales',
+            'url'  => 'inscriptionsgrs',
+            'icon_color' => 'yellow',
+        ],
+        [
+            'text' => 'Inscripciones Individuales',
+            'url'  => 'inscriptionsins',
             'icon_color' => 'red',
         ],
 
