@@ -1,15 +1,13 @@
-
-@section('title', __('Participants'))
 <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 <script src="{{ mix('js/app.js') }}" defer></script>
-<div wire:ignore.self class="modal fade" id="createDownloadModal" >
 
-   
-	
+
+
+
             <table class="table table-striped"  >
                 <thead >
-                    <tr> 
-                        <td>#</td> 
+                    <tr>
+                        <td>#</td>
                         <th>Nombre</th>
                         <th>Apellido</th>
                         <th>Cedula</th>
@@ -22,7 +20,7 @@
                 <tbody>
                     @foreach($participants as $row)
                     <tr>
-                        <td>{{ $loop->iteration }}</td> 
+                        <td>{{ $loop->iteration }}</td>
                         <td>{{ $row->nombre }}</td>
                         <td>{{ $row->apellido }}</td>
                         <td>{{ $row->cedula }}</td>
@@ -32,6 +30,5 @@
                     </tr>
                         @endforeach
                 </tbody>
-                
-            </table>						
-</div>
+
+            </table>
