@@ -40,6 +40,7 @@ Route::middleware([
 	Route::view('teams', 'livewire.teams.index')->middleware('auth');
     Route::get('download-pdf','App\Http\Livewire\Participants@generar_pdf')->name('descargar_pdf');
     Route::get('generar_pdf', [App\Http\Livewire\Participants::class, 'generatePdf'])->name('generar_pdf');
+    Route::get('categoria_pdf', [App\Http\Livewire\Categories::class, 'generatePdf'])->name('categoria_pdf');
 
 Auth::routes();
 

@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Categorie;
+use PDF;
 
 class Categories extends Component
 {
@@ -84,5 +85,13 @@ class Categories extends Component
             $record = Categorie::where('id', $id);
             $record->delete();
         }
+    }
+    public function generatePdf(){
+        $categories = Categorie::all();
+        $pdf = PDF::loadView('pdf.categories',[
+            'categories'=>$categories
+        ]);
+        return $pdf->stream();
+        //return $pdf->download('participants.pdf');
     }
 }
