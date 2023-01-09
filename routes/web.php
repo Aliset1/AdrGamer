@@ -40,11 +40,8 @@ Route::middleware([
 	Route::view('teams', 'livewire.teams.index')->middleware('auth');
     Route::get('download-pdf','App\Http\Livewire\Participants@generar_pdf')->name('descargar_pdf');
     Route::get('generar_pdf', [App\Http\Livewire\Participants::class, 'generatePdf'])->name('generar_pdf');
-<<<<<<< Updated upstream
     Route::get('categoria_pdf', [App\Http\Livewire\Categories::class, 'generatePdf'])->name('categoria_pdf');
-=======
     Route::get('generarTeam_pdf', [App\Http\Livewire\Teams::class, 'generatePdf'])->name('generarTeam_pdf');
->>>>>>> Stashed changes
 
 Auth::routes();
 
