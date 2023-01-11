@@ -31,6 +31,8 @@
                 <input wire:model="id_aula" type="text" class="form-control" id="id_aula" placeholder="Id Aula">@error('id_aula') <span class="error text-danger">{{ $message }}</span> @enderror
             </div>
 
+            
+
                 </form>
             </div>
             <div class="modal-footer">

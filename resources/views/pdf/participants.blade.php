@@ -1,4 +1,3 @@
-                      
 <!doctype html>
 <html lang="es">
 
@@ -41,3 +40,4 @@
                         @endforeach
                 </tbody>
             </table>
+</div>

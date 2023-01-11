@@ -13,31 +13,32 @@
     </style>
 </head>
 
-<body>
-    <div class="container py-5">
-        <h5 class=" font-weight-bold" style="text-align:center">------------Listado de Juegos---------</h5>
-        <table class="table table-striped table-hove">
-            <thead>
-                <tr>
-                    <th>Numero</th>
-                    <th>Nombre</th>
-                    <th>Descripción de reglas</th>
-                </tr>
-            </thead>
-            <tbody>
-                @forelse ($games as $row)
-                <tr>
-                    <td>{{ $row->id }}</td>
-                    <td>{{ $row->nombre }}</td>
-                    <td>{{ $row->reglas }}</td>
-                    
-                </tr>
-                @empty
+<h5 class=" font-weight-bold" style="text-align:center">------------Listado de Juegos---------</h5>
 
-                @endforelse
-            </tbody>
-        </table>
-    </div>
-</body>
-
-</html>
+<table class="table table-striped table-hove">
+						<thead class="thead">
+							<tr> 
+								<td>#</td> 
+								<th>Nombre</th>
+								<th>Reglas</th>
+								<th>Valor</th>
+								<th>Id Categoria</th>
+								<th>Id Aula</th>
+								<td>ACCIONES</td>
+							</tr>
+						</thead>
+						<tbody>
+							@foreach($games as $row)
+							<tr>
+								<td>{{ $loop->iteration }}</td> 
+								<td>{{ $row->nombre }}</td>
+								<td>{{ $row->reglas }}</td>
+								<td>{{ $row->valor }}</td>
+								<td>{{ $row->id_categoria }}</td>
+								<td>{{ $row->id_aula }}</td>
+								<td width="90">
+								
+								</td>
+							@endforeach
+						</tbody>
+					</table>

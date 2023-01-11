@@ -14,9 +14,9 @@
 </head>
     
     <div class="container">
-        <div class="text-center text-red-500">
-            <h1 class="text-2xl font-bold text-center">--------Listado Equipos---------- </h1>
-        </div>
+        
+	<h5 class=" font-weight-bold" style="text-align:center">------------Listado de Equipos---------</h5>
+        
         <table class='table table-striped table-hove'>
             <thead>
                 <tr>
