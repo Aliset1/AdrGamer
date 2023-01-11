@@ -5,7 +5,12 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Team;
-use   PDF;
+use App\Models\Inscriptionsgr;
+use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
+use Barryvdh\DomPDF\PDF as DomPDFPDF;
+use Dompdf\Adapter\PDFLib;
+use PDF;
+
 use Illuminate\Support\Facades\App;
 
 class Teams extends Component
@@ -88,8 +93,11 @@ class Teams extends Component
         }
     }
     public function generatePdf(){
-        $teams = Team::all();
-        $pdf = PDF::loadView('pdf.teams',[
+        $teams = Inscriptionsgr::join('teams','teams.id','=','inscriptionsgrs.id_equipo')
+        ->join('games','games.id','=','inscriptionsgrs.id_juego')
+        ->select('teams.nombre as team','games.nombre as game','inscriptionsgrs.fecha as date')
+        ->get();
+        $pdf = pdf::loadView('pdf.teams',[
             'teams'=>$teams
         ]);
         return $pdf->stream();
