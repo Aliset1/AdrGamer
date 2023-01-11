@@ -40,8 +40,10 @@ Route::middleware([
 	Route::view('teams', 'livewire.teams.index')->middleware('auth');
     Route::get('download-pdf','App\Http\Livewire\Participants@generar_pdf')->name('descargar_pdf');
     Route::get('generar_pdf', [App\Http\Livewire\Participants::class, 'generatePdf'])->name('generar_pdf');
+    Route::get('Generar_juegos', [App\Http\Livewire\Games::class, 'generatePdf'])->name('Generar_juegos');
     Route::get('categoria_pdf', [App\Http\Livewire\Categories::class, 'generatePdf'])->name('categoria_pdf');
     Route::get('classroom_pdf',[App\Http\Livewire\Classrooms::class, 'generatePdf'])->name('classroom_pdf');
+    Route::get('generarTeam_pdf', [App\Http\Livewire\Teams::class, 'generatePdf'])->name('generarTeam_pdf');
 
 Auth::routes();
 

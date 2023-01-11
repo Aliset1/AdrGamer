@@ -5,6 +5,9 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Game;
+use   PDF;
+use Illuminate\Support\Facades\App;
+
 
 class Games extends Component
 {
@@ -112,5 +115,19 @@ class Games extends Component
             $record = Game::where('id', $id);
             $record->delete();
         }
+
     }
+    
+    public function generatePdf(){
+        $games = Game::all();
+        $pdf = PDF::loadView('pdf.games',[
+            'games'=>$games
+        ]);
+        return $pdf->stream();
+    }
+
+
+
+
+
 }
