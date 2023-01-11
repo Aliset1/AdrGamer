@@ -1,7 +1,10 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ mix('css/app.css') }}">
+<script src="{{ mix('js/app.js') }}" defer></script>
 
     <div class="container">
-        <div class="text-center text-red-500">
-            <h1 class="text-2xl font-bold text-center">Reporte de las Inscripciones Grupales </h1>
+        <div class="text-center">
+            <h1 class="text-2xl font-bold text-center fw-primary">Reporte de las Inscripciones Grupales </h1>
         </div>
         <table>
             <thead>
@@ -13,14 +16,8 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($teams as $row)
-                <tr>
-                    <td class="border border-gray-400 px-4 py-2">{{ $loop->iteration }}</td>
-                    <td class="border border-gray-400 px-4 py-2">{{ $row->team }}</td>
-                    <td class="border border-gray-400 px-4 py-2">{{$row->game}}</td>
-                    <td class="border border-gray-400 px-4 py-2">{{$row->date}}</td>
-                </tr>
-                    @endforeach
+                <!-- Mostrar datos en orden alfabetico -->
+                @
             </tbody>
         </table>
     </div>
