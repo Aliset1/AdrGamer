@@ -26,7 +26,7 @@
 						<i class="fa fa-plus"></i>  Descargar PDF
 						</div>
 						<div>
-						<a class="btn btn-sm "  href="/generar_pdf" target="_blank">PDF</a>
+						<a class="btn btn-sm btn-info"  href="/generar_pdf" target="_blank">PDF</a>
 
 						</div>
 

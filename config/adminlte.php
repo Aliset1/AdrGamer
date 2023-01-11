@@ -349,16 +349,31 @@ return [
         ],
 
 
-        ['header' => 'account_settings'],
+        ['header' => 'MENU REPORTES'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+            'text' => 'Participantes',
+            'url'  => 'generar_pdf',
+            'target'=>'_blank'
         ],
         [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
+            'text' => 'Juegos',
+            'url'  => 'Generar_juegos',
+            'target'=>'_blank'
+        ],
+        [
+            'text' => 'Aulas',
+            'url'  => 'classroom_pdf',
+            'target'=>'_blank'
+        ],
+        [
+            'text' => 'Equipos',
+            'url'  => 'generarTeam_pdf',
+            'target'=>'_blank'
+        ],
+        [
+            'text' => 'Categorias',
+            'url'  => 'categoria_pdf',
+            'target'=>'_blank'
         ],
         [
             'text'    => 'multilevel',

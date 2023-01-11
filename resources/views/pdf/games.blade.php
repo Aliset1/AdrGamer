@@ -16,7 +16,7 @@
 <body>
     <div class="container py-5">
         <h5 class=" font-weight-bold" style="text-align:center">------------Listado de Juegos---------</h5>
-        <table class="table table-bordered mt-5">
+        <table class="table table-striped table-hove">
             <thead>
                 <tr>
                     <th>Numero</th>

@@ -22,7 +22,7 @@
 						<i class="fa fa-plus"></i>  Crear Juegos
 						</div>
 						<div>
-						<a class="btn btn-sm "  href="/Generar_juegos" target="_blank">PDF</a>
+						<a class="btn btn-sm btn-info "  href="/Generar_juegos" target="_blank">PDF</a>
 
 						</div>
 					</div>

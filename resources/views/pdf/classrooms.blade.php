@@ -1,10 +1,25 @@
-<table class="table table-bordered table-sm">
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Laravel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        table {
+            font-size: 12px;
+        }
+    </style>
+</head>
+	<h5 class=" font-weight-bold" style="text-align:center">------------Listado de Aulas---------</h5>
+	<table class="table table-striped table-hove">
 						<thead class="thead">
 							<tr> 
 								<td>#</td> 
 								<th>Numeroaula</th>
 								<th>Bloque</th>
-								<td>ACCIÓN</td>
+								
 							</tr>
 						</thead>
 						<tbody>
@@ -14,15 +29,7 @@
 								<td>{{ $row->numeroAula }}</td>
 								<td>{{ $row->bloque }}</td>
 								<td width="90">
-								<div class="btn-group">
-									<button type="button" class="btn btn-info btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Acciones
-									</button>
-									<div class="dropdown-menu dropdown-menu-right">
-									<a data-toggle="modal" data-target="#updateModal" class="dropdown-item" wire:click="edit({{$row->id}})"><i class="fa fa-edit"></i> Editar </a>							 
-									<a class="dropdown-item" onclick="confirm('Confirm Delete Classroom id {{$row->id}}? \nDeleted Classrooms cannot be recovered!')||event.stopImmediatePropagation()" wire:click="destroy({{$row->id}})"><i class="fa fa-trash"></i> Eliminar </a>   
-									</div>
-								</div>
+								
 								</td>
 							@endforeach
 						</tbody>

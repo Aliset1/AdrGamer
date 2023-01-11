@@ -24,7 +24,7 @@
 						<i class="fa fa-plus"></i>  Crear Grupos
 						</div>
                         <div>
-                            <a class="btn btn-sm "  href="/generarTeam_pdf" target="_blank">PDF</a>
+                            <a class="btn btn-sm btn-info "  href="/generarTeam_pdf" target="_blank">PDF</a>
                         </div>
 					</div>
 				</div>
