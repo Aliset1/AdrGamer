@@ -1,36 +1,43 @@
-<link rel="stylesheet" href="{{ mix('css/app.css') }}">
-<script src="{{ mix('js/app.js') }}" defer></script>
+<!doctype html>
+<html lang="es">
 
-<table class="table table-striped">
+<head>
+    <title>Laravel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        table {
+            font-size: 12px;
+        }
+    </style>
+</head>
 
-    <thead>
-        <tr>
-            <th>---------------------------------------------------------------</th>
-        </tr>
+<body>
+    <div class="container py-5">
+        <h5 class=" font-weight-bold" style="text-align:center">------------Listado de Juegos---------</h5>
+        <table class="table table-bordered mt-5">
+            <thead>
+                <tr>
+                    <th>Numero</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                @forelse ($games as $row)
+                <tr>
+                    <td>{{ $row->id }}</td>
+                    <td>{{ $row->nombre }}</td>
+                    <td>{{ $row->reglas }}</td>
+                    
+                </tr>
+                @empty
 
-        <tr>
-            <th>------------------------Lista de juegos-------------</th>
-        </tr>
-        
-        <tr>
-            <td>Numero</td>
-            <th>Nombre</th>
-            <th>Descripcion</th>
+                @endforelse
+            </tbody>
+        </table>
+    </div>
+</body>
 
-        </tr>
-
-
-    </thead>
-
-    <tbody>
-
-        @foreach($games as $row)
-        <tr>
-            <td>{{ $loop->iteration }}</td>
-            <td>{{ $row->nombre }}</td>
-            <td>{{ $row->id_juegos }}</td>
-        </tr>
-        @endforeach
-    </tbody>d
-
-</table>
+</html>
