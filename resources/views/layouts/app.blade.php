@@ -17,7 +17,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <script src="{{ mix('js/app.js') }}" defer></script>
 	 @livewireStyles
 </head>
 <body>
@@ -37,42 +38,42 @@
                     <ul class="navbar-nav mr-auto">
 						<!--Nav Bar Hooks - Do not delete!!-->
 						<li class="nav-item">
-                            <a href="{{ url('/inscriptionsins') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Inscriptionsins</a> 
+                            <a href="{{ url('/inscriptionsins') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Inscriptionsins</a>
                         </li>
 						<li class="nav-item">
-                            <a href="{{ url('/inscriptionsgrs') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Inscriptionsgrs</a> 
+                            <a href="{{ url('/inscriptionsgrs') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Inscriptionsgrs</a>
                         </li>
 						<li class="nav-item">
-                            <a href="{{ url('/games') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Games</a> 
+                            <a href="{{ url('/games') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Games</a>
                         </li>
 						<li class="nav-item">
-                            <a href="{{ url('/participants') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Participants</a> 
+                            <a href="{{ url('/participants') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Participants</a>
                         </li>
 						<li class="nav-item">
-                            <a href="{{ url('/classrooms') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Classrooms</a> 
+                            <a href="{{ url('/classrooms') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Classrooms</a>
                         </li>
 						<li class="nav-item">
-                            <a href="{{ url('/categories') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Categories</a> 
+                            <a href="{{ url('/categories') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Categories</a>
                         </li>
 						<li class="nav-item">
-                            <a href="{{ url('/teams') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Teams</a> 
+                            <a href="{{ url('/teams') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Teams</a>
                         </li>
                     </ul>
 					@endauth()
-					
+
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
-                            
+
                             @endif
-                           
+
                             @if (Route::has('login'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
-                            
+
                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
