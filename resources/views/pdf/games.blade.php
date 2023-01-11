@@ -21,7 +21,7 @@
                 <tr>
                     <th>Numero</th>
                     <th>Nombre</th>
-                    <th>Descripción</th>
+                    <th>Descripción de reglas</th>
                 </tr>
             </thead>
             <tbody>

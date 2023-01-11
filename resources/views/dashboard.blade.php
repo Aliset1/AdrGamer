@@ -166,105 +166,106 @@ $inscriptionsgrs = \DB::table('inscriptionsgrs')
                         </div>
                     </div>
                 </div>
-            <script type="text/javascript">
-            var labels = {
-                {
-                    Js::from($labels)
-                }
-            };
-            var inscripciones_in = {
-                {
-                    Js::from($inscriptionsins)
-                }
-            };
+                <script type="text/javascript">
+                var labels = {
+                    {
+                        Js::from($labels)
+                    }
+                };
+                var inscripciones_in = {
+                    {
+                        Js::from($inscriptionsins)
+                    }
+                };
 
-            const data = {
-                labels: labels,
-                datasets: [{
-                    label: 'My First dataset',
-                    backgroundColor: 'rgb(255, 99, 132)',
-                    borderColor: 'rgb(255, 99, 132)',
-                    data: users,
-                }]
-            };
+                const data = {
+                    labels: labels,
+                    datasets: [{
+                        label: 'My First dataset',
+                        backgroundColor: 'rgb(255, 99, 132)',
+                        borderColor: 'rgb(255, 99, 132)',
+                        data: users,
+                    }]
+                };
 
-            const config = {
-                type: 'line',
-                data: data,
-                options: {}
-            };
+                const config = {
+                    type: 'line',
+                    data: data,
+                    options: {}
+                };
 
-            const myChart = new Chart(
-                document.getElementById('myChart'),
-                config
-            );
-            </script>
-            <div class="card connectedSortable col-lg-6">
-                <div class="card-header">
-                    <h3 class="card-title m-1">
-                        <i class="fas fa-chart-bar mr-1"></i>
-                        Inscripciones individuales por juego
-                    </h3>
-                </div><!-- /.card-header -->
-                <div class="card-body">
-                    <div class="chart" id="revenue-chart" style="position: relative; height: 300px; ">
-                        <canvas id="inscripciones-ind-x-juego" height="300" style="height: 300px;"></canvas>
-                    </div>
-                </div><!-- /.card-body -->
-            </div>
-                    <!-- /.card -->
+                const myChart = new Chart(
+                    document.getElementById('myChart'),
+                    config
+                );
+                </script>
+                <div class="card connectedSortable col-lg-6">
+                    <div class="card-header">
+                        <h3 class="card-title m-1">
+                            <i class="fas fa-chart-bar mr-1"></i>
+                            Inscripciones individuales por juego
+                        </h3>
+                    </div><!-- /.card-header -->
+                    <div class="card-body">
+                        <div class="chart" id="revenue-chart" style="position: relative; height: 300px; ">
+                            <canvas id="inscripciones-ind-x-juego" height="300" style="height: 300px;"></canvas>
+                        </div>
+                    </div><!-- /.card-body -->
+                </div>
+                <!-- /.card -->
 
-            <div class="card connectedSortable col-lg-6">
-                <div class="card-header">
-                    <h3 class="card-title m-1">
-                        <i class="fas fa-chart-bar mr-1"></i>
-                        Inscripciones Grupales por juego
-                    </h3>
-                </div><!-- /.card-header -->
-                <div class="card-body">
-                    <div class="chart" id="revenue-chart" style="position: relative; height: 300px; ">
-                        <canvas id="inscripciones-gru-x-juego" height="300" style="height: 300px;"></canvas>
-                    </div>
-                </div><!-- /.card-body -->
+                <div class="card connectedSortable col-lg-6">
+                    <div class="card-header">
+                        <h3 class="card-title m-1">
+                            <i class="fas fa-chart-bar mr-1"></i>
+                            Inscripciones Grupales por juego
+                        </h3>
+                    </div><!-- /.card-header -->
+                    <div class="card-body">
+                        <div class="chart" id="revenue-chart" style="position: relative; height: 300px; ">
+                            <canvas id="inscripciones-gru-x-juego" height="300" style="height: 300px;"></canvas>
+                        </div>
+                    </div><!-- /.card-body -->
+                </div>
             </div>
         </div>
-    </div>
 </section>
 
-                        @stop
+@stop
 
-                        @section('css')
-                        <link rel="stylesheet" href="/css/admin_custom.css">
-                        @stop
+@section('css')
+<link rel="stylesheet" href="/css/admin_custom.css">
+@stop
 
-                        @section('js')
-                        <script>
-                        new Chart(ctx3, {
-                            type: 'pie',
-                            data: {
-                                labels: juegos3.label,
-                                datasets: [{
-                                    label: '# of Votes',
-                                    data: juegos3.data,
-                                    borderWidth: 1,
-                                    backgroundColor: [
-                                        'rgba(255, 99, 132, 1)',
-                                        'rgba(54, 162, 235, 1)',
-                                        'rgba(255, 206, 86, 1)',
-                                        'rgba(75, 192, 192, 1)',
-                                        'rgba(153, 102, 255, 1)',
-                                        'rgba(255, 248, 154, 1)',
-                                        'rgba(255, 203, 203, 1)',
-                                        'rgba(243, 120, 120, 1)',
-                                        'rgba(115, 169, 173, 1)'
-                                    ],
+@section('js')
+<script>
+const ctx3 = document.getElementById('ins-x-cat');
+new Chart(ctx3, {
+    type: 'pie',
+    data: {
+        labels: ['Hola','Hola','Hola','Hola','Hola'],
+        datasets: [{
+            label: '# of Votes',
+            data: [1,2,3,4,5],
+            borderWidth: 1,
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 248, 154, 1)',
+                'rgba(255, 203, 203, 1)',
+                'rgba(243, 120, 120, 1)',
+                'rgba(115, 169, 173, 1)'
+            ],
 
-                                }]
-                            },
-                            options: {
-                                maintainAspectRatio: false,
-                                responsive: true,
-                            }
-                        });
-                        </script>
-                        @stop
+        }]
+    },
+    options: {
+        maintainAspectRatio: false,
+        responsive: true,
+    }
+});
+</script>
+@stop
