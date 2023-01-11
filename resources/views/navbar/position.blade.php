@@ -10,7 +10,8 @@
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        @vite(['resources/js/app.js', 'resources/sass/app.scss'])
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        <script src="{{ mix('js/app.js') }}" defer></script>
         <style>
             /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */body {
 
@@ -27,9 +28,8 @@
     @include('navbar.app')
         <div>
             <h2 class="text-center fs-2">
-                Posiciones
+                Posiciones 
             </h2>
-            
         </div>
 </body>
 </html>

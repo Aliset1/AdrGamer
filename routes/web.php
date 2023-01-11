@@ -13,12 +13,53 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+//HOME 
+
+
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/calendar', function () {
-    return view('calendar');
+    return view('navbar/calendar');
 });
+
+
+Route::get('/posiciones', function () {
+    return view('navbar/position');
+});
+
+
+Route::get('/normativas', function () {
+    return view('navbar/normativa');
+});
+
+Route::get('/gamesNavbar', function () {
+    return view('navbar/games');
+});
+
+Route::get('/posiciones', function () {
+    return view('navbar/position');
+});
+
+Route::get('/noticias', function () {
+    return view('navbar/notices ');
+});
+
+Route::get('/contactos', function () {
+    return view('navbar/contact ');
+});
+
+
+Route::get('/patrocinadores', function () {
+    return view('navbar/patrocinadores');
+});
+
+
+
+
 
 Route::middleware([
     'auth:sanctum',

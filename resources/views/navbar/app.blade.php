@@ -26,7 +26,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 opcionesNav">
                             <form class="" role="calendar">
-                                <a class="btn text-white" href="/calendar">Calendario</a>
+                                <a class="btn text-white" href="/calendar">Inicio</a>
                             </form>
                             <li class="nav-item">
                              <a class="nav-link primary  text-white"  href="/calendar">Calendario</a>
@@ -35,7 +35,7 @@
                             <a class="nav-link primary text-white" href="/posiciones">Posiciones</a>
                             </li>
                             <li class="nav-item " >
-                            <a class="nav-link text-white" href="/juegos">Juegos</a>
+                            <a class="nav-link text-white" href="/gamesNavbar">Juegos</a>
                             </li>
                             <li class="nav-item">
                             <a class="nav-link text-white " href="/normativas">Normativas</a>
