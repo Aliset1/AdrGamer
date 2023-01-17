@@ -166,39 +166,6 @@ $inscriptionsgrs = \DB::table('inscriptionsgrs')
                         </div>
                     </div>
                 </div>
-                <script type="text/javascript">
-                var labels = {
-                    {
-                        Js::from($labels)
-                    }
-                };
-                var inscripciones_in = {
-                    {
-                        Js::from($inscriptionsins)
-                    }
-                };
-
-                const data = {
-                    labels: labels,
-                    datasets: [{
-                        label: 'My First dataset',
-                        backgroundColor: 'rgb(255, 99, 132)',
-                        borderColor: 'rgb(255, 99, 132)',
-                        data: users,
-                    }]
-                };
-
-                const config = {
-                    type: 'line',
-                    data: data,
-                    options: {}
-                };
-
-                const myChart = new Chart(
-                    document.getElementById('myChart'),
-                    config
-                );
-                </script>
                 <div class="card connectedSortable col-lg-6">
                     <div class="card-header">
                         <h3 class="card-title m-1">
@@ -208,7 +175,7 @@ $inscriptionsgrs = \DB::table('inscriptionsgrs')
                     </div><!-- /.card-header -->
                     <div class="card-body">
                         <div class="chart" id="revenue-chart" style="position: relative; height: 300px; ">
-                            <canvas id="inscripciones-ind-x-juego" height="300" style="height: 300px;"></canvas>
+                            <canvas id="ins-x-cat2" height="300" style="height: 300px;"></canvas>    
                         </div>
                     </div><!-- /.card-body -->
                 </div>
@@ -223,7 +190,7 @@ $inscriptionsgrs = \DB::table('inscriptionsgrs')
                     </div><!-- /.card-header -->
                     <div class="card-body">
                         <div class="chart" id="revenue-chart" style="position: relative; height: 300px; ">
-                            <canvas id="inscripciones-gru-x-juego" height="300" style="height: 300px;"></canvas>
+                            <canvas id="ins-x-cat3" height="300" style="height: 300px;"></canvas>    
                         </div>
                     </div><!-- /.card-body -->
                 </div>
@@ -239,7 +206,66 @@ $inscriptionsgrs = \DB::table('inscriptionsgrs')
 
 @section('js')
 <script>
-const ctx3 = document.getElementById('ins-x-cat');
+const ctx1 = document.getElementById('ins-x-cat');
+const ctx2 = document.getElementById('ins-x-cat2');
+const ctx3 = document.getElementById('ins-x-cat3');
+
+new Chart(ctx1, {
+    type: 'pie',
+    data: {
+        labels: ['Hola','Hola','Hola','Hola','Hola'],
+        datasets: [{
+            label: '# of Votes',
+            data: [1,2,3,4,5],
+            borderWidth: 1,
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 248, 154, 1)',
+                'rgba(255, 203, 203, 1)',
+                'rgba(243, 120, 120, 1)',
+                'rgba(115, 169, 173, 1)'
+            ],
+
+        }]
+    },
+    options: {
+        maintainAspectRatio: false,
+        responsive: true,
+    }
+});
+
+new Chart(ctx2, {
+    type: 'bar',
+    data: {
+        labels: ['Hola','Hola','Hola','Hola','Hola'],
+        datasets: [{
+            label: '# of Votes',
+            data: [1,2,3,4,5],
+            borderWidth: 1,
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 248, 154, 1)',
+                'rgba(255, 203, 203, 1)',
+                'rgba(243, 120, 120, 1)',
+                'rgba(115, 169, 173, 1)'
+            ],
+
+        }]
+    },
+    options: {
+        maintainAspectRatio: false,
+        responsive: true,
+    }
+});
+
 new Chart(ctx3, {
     type: 'pie',
     data: {
