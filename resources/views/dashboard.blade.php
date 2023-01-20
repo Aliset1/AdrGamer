@@ -213,7 +213,7 @@ const ctx3 = document.getElementById('ins-x-cat3');
 new Chart(ctx1, {
     type: 'pie',
     data: {
-        labels: ['Hola','Hola','Hola','Hola','Hola'],
+        labels: ['Miedo','Aventur','Acion','terror','plataforma'],
         datasets: [{
             label: '# of Votes',
             data: [1,2,3,4,5],
@@ -241,7 +241,7 @@ new Chart(ctx1, {
 new Chart(ctx2, {
     type: 'bar',
     data: {
-        labels: ['Hola','Hola','Hola','Hola','Hola'],
+        labels: ['Miedo','Aventur','Acion','terror','plataforma'],
         datasets: [{
             label: '# of Votes',
             data: [1,2,3,4,5],
@@ -269,7 +269,7 @@ new Chart(ctx2, {
 new Chart(ctx3, {
     type: 'pie',
     data: {
-        labels: ['Hola','Hola','Hola','Hola','Hola'],
+        labels: ['Miedo','Aventur','Acion','terror','plataforma'],
         datasets: [{
             label: '# of Votes',
             data: [1,2,3,4,5],
