@@ -26,29 +26,24 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 opcionesNav">
                             <form class="" role="calendar">
-                                <a class="btn text-white" href="/calendar">Inicio</a>
+                                <a class="btn text-white" href="/">Inicio</a>
                             </form>
                             <li class="nav-item">
-                             <a class="nav-link primary  text-white"  href="/calendar">Calendario</a>
+                             <a class="nav-link primary  text-white"  href="/calendar">Eventos Anteriores </a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link primary text-white" href="/posiciones">Posiciones</a>
+                            <a class="nav-link primary text-white" href="/posiciones"> Catalogo Productos</a>
                             </li>
                             <li class="nav-item " >
                             <a class="nav-link text-white" href="/gamesNavbar">Juegos</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link text-white " href="/normativas">Normativas</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link text-white" href="/noticias">Noticias</a>
+                            <a class="nav-link text-white " href="/normativas">Normativas del evento</a>
                             </li>
                             <li class="nav-item">
                             <a class="nav-link text-white" href="/contactos">Contactos</a>
                             </li>
-                            <li class="nav-item">
-                            <a class="nav-link text-white" href="/patrocinadores">Patrocinadores</a>
-                            </li>
+                            
                         </ul>
                         <form class="d-flex" role="login">
                             <a class="btn btn-outline-success" href="/login">Iniciar Sesion</a>
