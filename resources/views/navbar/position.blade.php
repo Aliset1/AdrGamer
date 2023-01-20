@@ -4,13 +4,13 @@
 <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Noarmativas del Evento </title>
+        <title>Ctalogo Productos </title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ mix('css/app4.css') }}">
+        <link rel="stylesheet" href="{{ mix('css/app2.css') }}">
         <script src="{{ mix('js/app2.js') }}" defer></script>
         
         <style>
@@ -32,15 +32,10 @@
 <section>
         <div class="content">
         <div class="info">
-          <h2>EVENTOS ANTERIORES  <br>
+          <h2>CATALOGO PRODUCTOS <br>
           <span>GAMER FEST </span>
         </h2>
-        <p ><strong >   
-        Con el auge de las nuevas tecnologías, el desarrollo de videojuegos ha sido un apartado que ha producido grandes beneficios a la industria multimedia. Desde hace años 
-        se han puesto en el mercado consolas y títulos de entretenimiento que han llegado a millones y se han convertido en su principal forma de entretenimiento. A este punto 
-        se entiende que los videojuegos son un producto artístico que busca cautivar a sus usuarios y dejar un mensaje. En este sentido la Carrera de Ingeniería de Software 
-        busca dar cabida a la difusión de estos espacios.
-                </p>
+        
           <a href="#" class="info-btn">Mas Informacion </a>
         </div>
                     
@@ -57,17 +52,10 @@
 
         <div class="col">
           <div class="card shadow-sm">
-          <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/Eventos.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focussable="false"><title></title><rect width="100%" height="100%" fill="#55595c"/></img>
+          <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/game1.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focussable="false"><title></title><rect width="100%" height="100%" fill="#55595c"/></img>
             <div class="card-body">
               <p class="card-text">
-            <strong>CUANDO:</strong> 
-              28 julio, 2022 a las 8:00 am – 29 julio, 2022 a las 4:00 pm
-              <strong>DONDE:</strong> 
-              La Universidad de las Fuerzas Armadas ESPE Sede Latacunga
-              Quijano y Ordóñez y Hermanas Páez
-              <strong>CONTACTOS:</strong> 
-              Universidad de las Fuerzas Armadas ESPE Sede Latacunga
-              2810 206
+            
               </p>
               <div class="d-flex justify-content-between align-items-center">
               </div>
@@ -79,14 +67,10 @@
 
         <div class="col">
           <div class="card shadow-sm">
-          <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/POSTER-FINAL2.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focussable="false"><title></title><rect width="100%" height="100%" fill="#55595c"/></img>
+          <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/game2.webp" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focussable="false"><title></title><rect width="100%" height="100%" fill="#55595c"/></img>
             <div class="card-body">
               <p class="card-text">
-                <strong>VUELEVE EL EVENTO MAS GRANDE DEL CNETRO DEL PAIS 
-                  <br>Ven Disfruta , participa y gan fabulosos premios 
-                  <br>Campus General Guillermo Rodriguez Lara 
-                  <br><strong>Belisario Quevedo</strong>
-                </strong>
+                <
               </p>
             
             </div>
@@ -98,18 +82,68 @@
 
         <div class="col">
           <div class="card shadow-sm">
-          <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/Ecventos2.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focussable="false"><title></title><rect width="100%" height="100%" fill="#55595c"/></img>
+          <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/game3.webp role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focussable="false"><title></title><rect width="100%" height="100%" fill="#55595c"/></img>
             <div class="card-body">
               <p class="card-text">
-                <strong>Campus General Guillermo Rodriguez Lara </strong>
-                <strong>!!GANADORES DE L GAMER FEST</strong>
-                <br><strong>Belisario Quevedo</strong>
+                
               </p>
              
             </div>
           </div>
         </div>
         
+
+        <div class="col">
+          <div class="card shadow-sm">
+          <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/game2.webp" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focussable="false"><title></title><rect width="100%" height="100%" fill="#55595c"/></img>
+            <div class="card-body">
+              <p class="card-text">
+                <
+              </p>
+            
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col">
+          <div class="card shadow-sm">
+          <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/game6.j" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focussable="false"><title></title><rect width="100%" height="100%" fill="#55595c"/></img>
+            <div class="card-body">
+              <p class="card-text">
+                <
+              </p>
+            
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+          <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/game4.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focussable="false"><title></title><rect width="100%" height="100%" fill="#55595c"/></img>
+            <div class="card-body">
+              <p class="card-text">
+                <
+              </p>
+            
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+          <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/game5.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focussable="false"><title></title><rect width="100%" height="100%" fill="#55595c"/></img>
+            <div class="card-body">
+              <p class="card-text">
+                <
+              </p>
+            
+            </div>
+          </div>
+        </div>
     </div>
   </div>
 
