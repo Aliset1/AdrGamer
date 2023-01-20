@@ -201,7 +201,7 @@ $inscriptionsgrs = \DB::table('inscriptionsgrs')
                             <canvas id="ins-x-cat2" height="300" style="height: 300px;"></canvas>
                         </div>
                     </div>
-                    <thead>
+                            <thead>
                                 <tr>
                             
                                     <th>Actualizado</th>
@@ -238,7 +238,7 @@ $inscriptionsgrs = \DB::table('inscriptionsgrs')
                         <div class="chart" id="revenue-chart" style="position: relative; height: 300px; ">
                             <canvas id="ins-x-cat3" height="300" style="height: 300px;"></canvas>
                         </div>
-                        <thead>
+                            <thead>
                                 <tr>
                             
                                     <th>Actualizado</th>
