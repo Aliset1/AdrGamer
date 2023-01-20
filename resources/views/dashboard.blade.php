@@ -162,7 +162,30 @@ $inscriptionsgrs = \DB::table('inscriptionsgrs')
                             <div class="card-body">
                                 <canvas id="ins-x-cat" height="300" style="height: 300px;"></canvas>
                             </div>
+                            <thead>
+                                <tr>
+                            
+                                    <th>Actualizado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    @foreach ($juegos as $juego)
+                                <tr>
+                                    <th scope="row">{{ $juego->id }}</th>
+                                    <td>{{ $juego->nombre }}</td>
+
+                                    <td>
+                                        <div class="sparkb" data-color="#00a65a" data-height="20">
+                                          
+                                        </div>
+                                    </td>
+                                </tr>
+                                @endforeach
+
+                            </tbody>
                             <!-- /.card-body-->
+
                         </div>
                     </div>
                 </div>
@@ -175,9 +198,32 @@ $inscriptionsgrs = \DB::table('inscriptionsgrs')
                     </div><!-- /.card-header -->
                     <div class="card-body">
                         <div class="chart" id="revenue-chart" style="position: relative; height: 300px; ">
-                            <canvas id="ins-x-cat2" height="300" style="height: 300px;"></canvas>    
+                            <canvas id="ins-x-cat2" height="300" style="height: 300px;"></canvas>
                         </div>
-                    </div><!-- /.card-body -->
+                    </div>
+                    <thead>
+                                <tr>
+                            
+                                    <th>Actualizado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    @foreach ($juegos as $juego)
+                                <tr>
+                                    <th scope="row">{{ $juego->id }}</th>
+                                    <td>{{ $juego->nombre }}</td>
+
+                                    <td>
+                                        <div class="sparkb" data-color="#00a65a" data-height="20">
+                                          
+                                        </div>
+                                    </td>
+                                </tr>
+                                @endforeach
+
+                            </tbody>
+                    <!-- /.card-body -->
                 </div>
                 <!-- /.card -->
 
@@ -190,8 +236,30 @@ $inscriptionsgrs = \DB::table('inscriptionsgrs')
                     </div><!-- /.card-header -->
                     <div class="card-body">
                         <div class="chart" id="revenue-chart" style="position: relative; height: 300px; ">
-                            <canvas id="ins-x-cat3" height="300" style="height: 300px;"></canvas>    
+                            <canvas id="ins-x-cat3" height="300" style="height: 300px;"></canvas>
                         </div>
+                        <thead>
+                                <tr>
+                            
+                                    <th>Actualizado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    @foreach ($juegos as $juego)
+                                <tr>
+                                    <th scope="row">{{ $juego->id }}</th>
+                                    <td>{{ $juego->nombre }}</td>
+
+                                    <td>
+                                        <div class="sparkb" data-color="#00a65a" data-height="20">
+                                          
+                                        </div>
+                                    </td>
+                                </tr>
+                                @endforeach
+
+                            </tbody>
                     </div><!-- /.card-body -->
                 </div>
             </div>
@@ -213,10 +281,10 @@ const ctx3 = document.getElementById('ins-x-cat3');
 new Chart(ctx1, {
     type: 'pie',
     data: {
-        labels: ['Hola','Hola','Hola','Hola','Hola'],
+        labels: ['Miedo', 'Aventur', 'Acion', 'terror', 'plataforma'],
         datasets: [{
             label: '# of Votes',
-            data: [1,2,3,4,5],
+            data: [1, 2, 3, 4, 5],
             borderWidth: 1,
             backgroundColor: [
                 'rgba(255, 99, 132, 1)',
@@ -241,10 +309,10 @@ new Chart(ctx1, {
 new Chart(ctx2, {
     type: 'bar',
     data: {
-        labels: ['Hola','Hola','Hola','Hola','Hola'],
+        labels: ['Miedo', 'Aventur', 'Acion', 'terror', 'plataforma'],
         datasets: [{
             label: '# of Votes',
-            data: [1,2,3,4,5],
+            data: [1, 2, 3, 4, 5],
             borderWidth: 1,
             backgroundColor: [
                 'rgba(255, 99, 132, 1)',
@@ -269,10 +337,10 @@ new Chart(ctx2, {
 new Chart(ctx3, {
     type: 'pie',
     data: {
-        labels: ['Hola','Hola','Hola','Hola','Hola'],
+        labels: ['Miedo', 'Aventur', 'Acion', 'terror', 'plataforma'],
         datasets: [{
             label: '# of Votes',
-            data: [1,2,3,4,5],
+            data: [1, 2, 3, 4, 5],
             borderWidth: 1,
             backgroundColor: [
                 'rgba(255, 99, 132, 1)',
